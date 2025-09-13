@@ -1,3 +1,16 @@
 *{
     font-family: "Inter", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card-item {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card-item:hover {
+  box-shadow: 0 10px 20px rgba(21, 128, 61, 0.15), 0 4px 6px rgba(21, 128, 61, 0.10);
+  transform: scale(1.05);
+  cursor: pointer;
+}

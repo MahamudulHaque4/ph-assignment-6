@@ -1,4 +1,3 @@
-
 let allCategoryContainer = document.querySelector(".all-category");
 let mobileAllCategoryContainer = document.querySelector(".mobile-all-category");
 let categoryBtn = document.querySelector(".category-btn");
@@ -146,22 +145,15 @@ const displayAddToCart = () => {
         <div class="flex items-center justify-between p-2 rounded-sm bg-[#F0FDF4] cursor-pointer">
             <div>
               <h2 class="font-bold mb-1">${cartItem.treeName}</h2>
-              <span class="text-[#1F2937]/50">৳ ${
-                cartItem.price / cartItem.count
-              } x ${cartItem.count}</span> = ${cartItem.price}
+              <span class="text-[#1F2937]/50">৳ ${cartItem.price / cartItem.count} x ${cartItem.count}</span> = ${cartItem.price}
             </div>
-            <span onclick="removeCart('${
-              cartItem.id
-            }')" class="cursor-pointer bg-gray-100 p-2 rounded-md text-red-600/70"><i class="fa-solid fa-trash text-sm"></i></span>
+            <span onclick="removeCart('${cartItem.id}')" class="cursor-pointer text-2xl text-red-500 font-bold ml-4">&times;</span>
         </div>
     `;
     })
     .join(" ");
 };
 
-// *****
-// Total Price of Add To Card Added
-// *****
 let totalPrice = document.querySelector(".total-price");
 
 const sumOfTotalPrice = () => {
@@ -172,9 +164,6 @@ const sumOfTotalPrice = () => {
   totalPrice.innerText = total;
 };
 
-// *****
-// Loading Spinner Functionality
-// *****
 const loadingSpinner = (status, place) => {
   if (status) {
     place.innerHTML = `<div class="col-span-full text-center mt-20"><span class="loading loading-dots loading-xl"></span></div>`;
