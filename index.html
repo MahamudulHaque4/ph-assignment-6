@@ -28,7 +28,7 @@
       >
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="Open mobile menu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -154,7 +154,7 @@
         <div class="xl:hidden">
           <div class="text-center">
             <button class="category-btn btn bg-[#15803D] text-white rounded-sm">
-              Choose Catagory
+              Choose Category
               <i class="fa-solid fa-chevron-down rotate-180 arrow-down"></i>
             </button>
           </div>
@@ -289,14 +289,16 @@
             class="rounded-md bg-white py-3 px-3 w-full outline-none border-none"
           />
 
+          <label for="number-of-trees" class="block text-white mb-1">Number of Trees</label>
           <select
-            name=""
+            id="number-of-trees"
+            name="number-of-trees"
             class="rounded-md bg-white py-3 px-3 w-full outline-none border-none"
           >
-            <option value="" disabled selected>Number of Trees</option>
-            <option value="">1 Tree - $5</option>
-            <option value="">5 Trees - $25</option>
-            <option value="">10 Trees - $50</option>
+            <option value="" disabled selected>Select number of trees</option>
+            <option value="1">1 Tree - $5</option>
+            <option value="5">5 Trees - $25</option>
+            <option value="10">10 Trees - $50</option>
           </select>
           <button
             type="button"
