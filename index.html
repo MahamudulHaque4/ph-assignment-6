@@ -265,8 +265,61 @@
       </div>
     </section>
 
+    <!-- Footer Section Plant a Tree -->
+    <footer class="">
+      <div
+        class="bg-[#166534] mx-auto px-4 md:px-16 lg:px-24 py-6 md:py-10 lg:py-20 flex items-center justify-center flex-col"
+      >
+        <h1 class="text-center text-2xl md:text-4xl mb-10 text-white font-bold">
+          Plant a Tree Today
+        </h1>
 
+        <form
+          action=""
+          class="bg-[#15803D] w-full max-w-[600px] p-10 rounded-md space-y-3"
+        >
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="rounded-md bg-white py-3 px-3 w-full outline-none border-none"
+          />
+          <input
+            type="text"
+            placeholder="Your Email Address"
+            class="rounded-md bg-white py-3 px-3 w-full outline-none border-none"
+          />
 
-    <script src="inddex.js"></script>
+          <select
+            name=""
+            class="rounded-md bg-white py-3 px-3 w-full outline-none border-none"
+          >
+            <option value="" disabled selected>Number of Trees</option>
+            <option value="">1 Tree - $5</option>
+            <option value="">5 Trees - $25</option>
+            <option value="">10 Trees - $50</option>
+          </select>
+          <button
+            type="button"
+            class="w-full btn font-semibold !py-2 rounded-[35px] text-[#15803D] bg-[#FACC15] mt-2"
+          >
+            Donate Now
+          </button>
+        </form>
+      </div>
+      <!-- bottom  -->
+      <div class="bg-[#14532D] text-center py-4">
+        <p class="text-white text-sm">
+          © 2025 Green Earth. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Dialog Box for every single card detail -->
+    <dialog
+      id="card_details"
+      class="modal modal-bottom sm:modal-middle"
+    ></dialog>
+
+    <script src="index.js"></script>
 </body>
 </html>

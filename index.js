@@ -108,3 +108,6 @@ const addActiveClass = (className) => {
     clicked.classList.add("bg-[#15803D]", "text-white");
   });
 };
+
+loadCategory();
+loadCategoryItem("plants");
