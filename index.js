@@ -145,7 +145,7 @@ const displayAddToCart = () => {
         <div class="flex items-center justify-between p-2 rounded-sm bg-[#F0FDF4] cursor-pointer">
             <div>
               <h2 class="font-bold mb-1">${cartItem.treeName}</h2>
-              <span class="text-[#1F2937]/50">৳ ${cartItem.price / cartItem.count} x ${cartItem.count}</span> = ${cartItem.price}
+              <span class="text-[#1F2937]/50">$${cartItem.price / cartItem.count} * ${cartItem.count}</span> = $${cartItem.price}
             </div>
             <span onclick="removeCart('${cartItem.id}')" class="cursor-pointer text-2xl text-red-500 font-bold ml-4">&times;</span>
         </div>
