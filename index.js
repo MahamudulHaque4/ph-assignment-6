@@ -62,7 +62,7 @@ const displayCategoryItem = (categoryItems) => {
       return `
             <div class="card-item flex flex-col justify-between p-3 bg-white rounded-md shadow-md overflow-hidden">
              <div class="w-full h-full max-h-[230px] md:max-h-[206px] object-cover overflow-hidden"> 
-                <img class="w-full h-full bg-cover object-cover rounded-md" src="${item.image}" alt="" />
+                <img class="w-full h-full bg-cover object-cover rounded-md" src="${item.image}" alt="${item.name}" loading="lazy" />
               </div>
 
               <h2 onclick="loadDetails(${item.id})" class="font-bold mb-3 mt-3 cursor-pointer">${item.name}</h2>
@@ -145,7 +145,7 @@ const displayAddToCart = () => {
         <div class="flex items-center justify-between p-2 rounded-sm bg-[#F0FDF4] cursor-pointer">
             <div>
               <h2 class="font-bold mb-1">${cartItem.treeName}</h2>
-              <span class="text-[#1F2937]/50">$${cartItem.price / cartItem.count} * ${cartItem.count}</span> = $${cartItem.price}
+              <span class="text-[#1F2937]/50">$${cartItem.price / cartItem.count} x ${cartItem.count} = ${cartItem.price}</span>
             </div>
             <span onclick="removeCart('${cartItem.id}')" class="cursor-pointer text-2xl text-red-500 font-bold ml-4">&times;</span>
         </div>
